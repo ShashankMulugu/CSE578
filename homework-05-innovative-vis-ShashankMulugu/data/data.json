@@ -1,0 +1,1032 @@
+{
+    "name": "spacedogs",
+    "img": "http://marvel-force-chart.surge.sh/marvel_force_chart_img/marvel.png",
+    "children": [
+        {
+            "rocket": "R-1V",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1951-07-22",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Dezik",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Dezik.jpg"
+                },
+                {
+                    "dogname": "Tsygan",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "Adopted as a pet by Soviet physicist Anatoli Blagonravov",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Tsygan.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1B",
+            "altitude": "100",
+            "mresult": "parachute failed, both dogs died",
+            "date": "1951-07-29",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Dezik",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Dezik.jpg"
+                },
+                {
+                    "dogname": "Lisa",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Lisa.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1B",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1951-08-15",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Chizhik",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Chizhik.jpg"
+                },
+                {
+                    "dogname": "Mishka",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Mishika.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1V",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1951-08-19",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Ryzhik",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Ryzhik.jpg"
+                },
+                {
+                    "dogname": "Smeliy",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Smeliy.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1B",
+            "altitude": "100",
+            "mresult": "failed, both dogs died",
+            "date": "1951-08-28",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Chizhik",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Chizhik.jpg"
+                },
+                {
+                    "dogname": "Mishka",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Mishika.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1B",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1951-09-03",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Neputeviy",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Neputeviy.jpg"
+                },
+                {
+                    "dogname": "ZIB",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "An untrained street dog found running around the barracks, captured after Bobik ran away days before his flight.",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\ZIB.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1D",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1951-06-26",
+            "year": "1951",
+            "children": [
+                {
+                    "dogname": "Lisa-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Lisa-2.jpg"
+                },
+                {
+                    "dogname": "Ryzhik-2",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Ryzhik-2.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1D",
+            "altitude": "100",
+            "mresult": "recovered safely, mishka-2 died",
+            "date": "1954-07-02",
+            "year": "1954",
+            "children": [
+                {
+                    "dogname": "Damka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Damka.jpg"
+                },
+                {
+                    "dogname": "Mishka-2",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Mishka-2.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1D",
+            "altitude": "100",
+            "mresult": "recovered safely, ryshik-2 died",
+            "date": "1954-07-07",
+            "year": "1954",
+            "children": [
+                {
+                    "dogname": "Ryzhik-2",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Ryzhik-2.jpg"
+                },
+                {
+                    "dogname": "Damka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Damka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "unknown",
+            "altitude": "unknown",
+            "mresult": "recovered safely",
+            "date": "1954-07-26",
+            "year": "1954",
+            "children": [
+                {
+                    "dogname": "Lisa-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Lisa-2.jpg"
+                },
+                {
+                    "dogname": "Ryzhik-3",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Ryzhik-3.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely, rita died",
+            "date": "1955-01-25",
+            "year": "1955",
+            "children": [
+                {
+                    "dogname": "Rita",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Rita.jpg"
+                },
+                {
+                    "dogname": "Linda",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Linda.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovery failed, both dogs died",
+            "date": "1955-02-05",
+            "year": "1955",
+            "children": [
+                {
+                    "dogname": "Lisa-2",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Lisa-2.jpg"
+                },
+                {
+                    "dogname": "Bulba",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Bulba.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely after 3 days",
+            "date": "1955-11-04",
+            "year": "1955",
+            "children": [
+                {
+                    "dogname": "Knopka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Knopka.jpg"
+                },
+                {
+                    "dogname": "Malyshka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Malyshka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1956-05-14",
+            "year": "1956",
+            "children": [
+                {
+                    "dogname": "Albina",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Albina.jpg"
+                },
+                {
+                    "dogname": "Kozyavka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Kozyavka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1956-05-31",
+            "year": "1956",
+            "children": [
+                {
+                    "dogname": "Linda",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Linda.jpg"
+                },
+                {
+                    "dogname": "Malyshka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Malyshka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1956-06-07",
+            "year": "1956",
+            "children": [
+                {
+                    "dogname": "Albina",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Albina.jpg"
+                },
+                {
+                    "dogname": "Kozyavka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Kozyavka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-1E",
+            "altitude": "100",
+            "mresult": "recovered safely",
+            "date": "1956-06-14",
+            "year": "1956",
+            "children": [
+                {
+                    "dogname": "Albina",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Albina.jpg"
+                },
+                {
+                    "dogname": "Kozyavka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Kozyavka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1957-05-16",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Damka-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Damka-2.jpg"
+                },
+                {
+                    "dogname": "Ryzhaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Ryzhaya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "cabin decompression, both dogs died",
+            "date": "1957-05-24",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Dzhoyna",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Dzhoyna.jpg"
+                },
+                {
+                    "dogname": "Ryzhaya",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Ryzhaya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1957-08-25",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Belka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Belka.jpg"
+                },
+                {
+                    "dogname": "Modnitsa",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Modnitsa.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1957-08-31",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Damka-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Damka-2.jpg"
+                },
+                {
+                    "dogname": "Belka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Belka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1957-09-06",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Belka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Belka.jpg"
+                },
+                {
+                    "dogname": "Modnitsa",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Modnitsa.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Sputnik 2",
+            "altitude": "orbital",
+            "mresult": "no recovery system, died in space",
+            "date": "1957-11-03",
+            "year": "1957",
+            "children": [
+                {
+                    "dogname": "Laika",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "Also known as Kudryavka (Little Curly) and Limonchik (Little Lemon) and Zhuchka (Little Beetle) and also Muttnik",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Laika.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-5A",
+            "altitude": "451",
+            "mresult": "cabin decompression, both dogs died",
+            "date": "1958-02-21",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Palma",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Palma.jpg"
+                },
+                {
+                    "dogname": "Pushok",
+                    "gender": "Male",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Pushok.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1958-08-02",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Palma-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Palma-2.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1958-08-13",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Palma-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Palma-2.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-5A",
+            "altitude": "451",
+            "mresult": "recovered safely",
+            "date": "1958-08-27",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Belyanka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Belyanka.jpg"
+                },
+                {
+                    "dogname": "Pestraya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Pestraya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "unknown",
+            "altitude": "unknown",
+            "mresult": "recovered safely",
+            "date": "1958-09-19",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Kozyavka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Kozyavka.jpg"
+                },
+                {
+                    "dogname": "Damka-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Damka-2.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-5A",
+            "altitude": "451",
+            "mresult": "parachute failed, both dogs died",
+            "date": "1958-10-31",
+            "year": "1958",
+            "children": [
+                {
+                    "dogname": "Knopka",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Knopka.jpg"
+                },
+                {
+                    "dogname": "Zhulba",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Zhulba.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1959-07-02",
+            "year": "1959",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Snezhinka-or-Zhemchuzhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Snezhinka-or-Zhemchuzhnaya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1959-07-10",
+            "year": "1959",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Snezhinka-or-Zhemchuzhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Snezhinka-or-Zhemchuzhnaya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1960-06-15",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Malyok",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Malyok.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1960-06-24",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Snezhinka-or-Zhemchuzhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Snezhinka-or-Zhemchuzhnaya.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Vostok Prototype",
+            "altitude": "was to be orbital",
+            "mresult": "exploded during launch, both dogs died",
+            "date": "1960-07-28",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Lisichka",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Lisichka.jpg"
+                },
+                {
+                    "dogname": "Bars-or-Chaika",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Bars-or-Chaika.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Sputnik 5",
+            "altitude": "orbital",
+            "mresult": "spent one day in orbit, recovered safely",
+            "date": "1960-08-19",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Belka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 4,
+                    "img": "imgs\\dogPictures\\Belka.jpg"
+                },
+                {
+                    "dogname": "Strelka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Went on to have six puppies with a male dog named Pushok who participated in many ground-based space experiments, but never made it into space. One of the pups was named Pushinka (\u041f\u0443\u0448\u0438\u043d\u043a\u0430, \"Fluffy\") and was presented to President John F. Kennedy by Nikita Khrushchev in 1961. A Cold War romance bloomed between Pushinka and a Kennedy dog named Charlie, resulting in the birth of four pups that JFK referred to jokingly as pupniks. Two of their pups, Butterfly and Streaker were given away to children in the Midwest. The other two puppies, White Tips and Blackie, stayed at the Kennedy home on Squaw Island but were eventually given away to family friends.",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Strelka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-2A",
+            "altitude": "212",
+            "mresult": "recovered safely",
+            "date": "1960-09-16",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Palma-2",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 3,
+                    "img": "imgs\\dogPictures\\Palma-2.jpg"
+                },
+                {
+                    "dogname": "Malyok",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 2,
+                    "img": "imgs\\dogPictures\\Malyok.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "unknown",
+            "altitude": "unknown",
+            "mresult": "recovered safely",
+            "date": "1960-09-22",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Kusachka-or-Otvazhnaya",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Made the most flights of any space dog.",
+                    "numflights": 7,
+                    "img": "imgs\\dogPictures\\Kusachka-or-Otvazhnaya.jpg"
+                },
+                {
+                    "dogname": "Neva",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Neva.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Sputnik 6",
+            "altitude": "orbital",
+            "mresult": "spent one day in orbit, capsule was destroyed, both dogs died",
+            "date": "1960-12-01",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Mushka",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Mushka.jpg"
+                },
+                {
+                    "dogname": "Pchyolka",
+                    "gender": "Female",
+                    "fate": 1,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Pchyolka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7",
+            "altitude": "was to be orbital",
+            "mresult": "upper stage failed, dogs recovered after a suborbital flight",
+            "date": "1960-12-22",
+            "year": "1960",
+            "children": [
+                {
+                    "dogname": "Shutka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Also known as Damka (Little Lady) and Zhemchuzhina (Pearl). Adopted by Oleg Gazenko, a leading Soviet space scientist. She went on to have puppies and continued living with Gazenko and his family until her death 14 years later.",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Shutka.jpg"
+                },
+                {
+                    "dogname": "Kometka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "Also known as Krasavka (Cheater) and Zhulka (Beauty) and Zhemchuzhnaya (Pearly) and Snezchinka (Snowflake)",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Kometka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Sputnik 9",
+            "altitude": "orbital",
+            "mresult": "one orbit, recovered safely",
+            "date": "1961-03-09",
+            "year": "1961",
+            "children": [
+                {
+                    "dogname": "Chernuskha",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Chernuskha.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "R-7, Sputnik 10",
+            "altitude": "orbital",
+            "mresult": "one orbit, recovered safely",
+            "date": "1961-03-25",
+            "year": "1961",
+            "children": [
+                {
+                    "dogname": "Zvezdochka",
+                    "gender": "Female",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Zvezdochka.jpg"
+                }
+            ]
+        },
+        {
+            "rocket": "Voskhod, Cosmos 110",
+            "altitude": "orbital",
+            "mresult": "recovered safely after a 22-day flight",
+            "date": "1966-02-22",
+            "year": "1966",
+            "children": [
+                {
+                    "dogname": "Ugolyok-or-Snezhok",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Ugolyok-or-Snezhok.jpg"
+                },
+                {
+                    "dogname": "Veterok-or-Bzdunok",
+                    "gender": "Male",
+                    "fate": 0,
+                    "notes": "",
+                    "numflights": 1,
+                    "img": "imgs\\dogPictures\\Veterok-or-Bzdunok.jpg"
+                }
+            ]
+        }
+    ]
+}

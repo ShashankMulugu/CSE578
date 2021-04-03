@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+    .bar {
+        fill: orange;
+    }
+
+    svg {
+        border: 1px solid gray;
+        border-radius: 10px;
+        height: 350px;
+        width: 500px;
+        margin: 5px;
+    }
+
+    .line {
+        fill: none;
+        stroke: orange;
+        stroke-width: 1px;
+    }
+
+    .grid .axis {
+        stroke: aliceblue;
+    }
+
+    /* .grid .tick line {
+        stroke: limegreen;
+        stroke-opacity: 0.6;
+    } */
+</style>
+
+<body>
+    <h2 style="font-family:Arial;">Homework #6: Argumentative Vis</h2>
+    <h3 style=" font-family:Arial, Helvetica, sans-serif;">Srinivas Shashank Mulugu - smulugu@asu.edu - 1217077238</h3>
+    <p style="font-family: Arial, Helvetica, sans-serif;">This visualization consists of two sides which shows the
+        approval and disapproval ratings of President Donald Trump. The source of the data is <a
+            href="https://data.fivethirtyeight.com/">fivethirtyeight</a>. Here, I have developed two charts one using
+        traditional methods without much manipulation to push a narrative and the other one is desgined to be misleading
+        and pushes a narrative that the President has been gaining approval over the years. The trick used in the chart
+        on the left is usually very commonly used in the news media and appears regularly on r/dataisugly. To make the
+        bar chart,
+        I began by cherrypicking the data. Instead of using the 16,000 surveys in the dataset, I have
+        actually only used 8 which were the top highest approval ratings that the President received. So, in
+        this graph it is implied that the approval ratings are averaged out to the year. But it is not
+        mentioned anywhere in the chart itself. So, this could be one way to show the trends that are not
+        there in the data. </p>
+
+    <div id="barchart" style="width: 100px; float: left;"></div>
+
+    <div id="linechart" style="margin-left: 0px; float: right;"></div>
+
+    <div class="divTable" style="width: 100%;border: 0px; padding: 10px; ">
+        <div class="divTableBody">
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <div
+                        style="font-family: Arial, Helvetica, sans-serif;margin-top: 350px;margin-left: 60px; font-weight: 700;">
+                        Approval
+                        Ratings of Donald
+                        Trump
+                        2017-2020</div>
+                </div>
+                <div class="divTableCell">
+                    <div
+                        style="font-family: Arial, Helvetica, sans-serif;margin-top: -100px; margin-left: 1015px; font-weight: 700;">
+                        Approval and
+                        Disapproval
+                        Ratings of Donald Trump
+                        2017-2020</div>
+                </div>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">
+                    <div id="barchart"></div>
+                </div>
+                <div class="divTableCell">
+                    <div id="linechart"></div>
+                </div>
+                <p style="font-family: Arial, Helvetica, sans-serif; width: 40%;">This visualization is inspired from
+                    the bar chart shown in class which shows the increase in cable regulation and spending by
+                    manipulatively binning the data. I thought
+                    this would be a great way to show an increase in the approval ratings of the President somehow. By
+                    using this graph, we can say that the current President is doing a very good job and has been
+                    gaining accolades from all the people and gained approval over his term. </p>
+                <p
+                    style="font-family: Arial, Helvetica, sans-serif; width: 40%; margin-left: 930px; margin-top: -110px;">
+                    This chart shows the reality of the situation also inspired by the same chart which shows the
+                    reality of the situation (just like in the cable regulation relaxation chart shown the lecture). As
+                    you can see, the approval ratings are
+                    nowhere near
+                    40 or 50 and in actuality it is howering over 15-25 for the most part. The data was collected from
+                    several surveys so
+                    it was averaged out. So, by using this
+                    chart, it can be argued that the other chart absolutely not real and the ratings can be ignored as
+                    outliers. One more interesting note is that,
+                    the disapproval ratings are much closer to the actual chart we see on the left.
+                </p>
+            </div>
+            <div class="divTableRow">
+                <div class="divTableCell">
+                </div>
+                <div class="divTableCell">
+                    <div id="linechart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- load the d3.js library -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="scripts/homework6.js"></script>
+</body>
