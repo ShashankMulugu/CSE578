@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Soviet Space Dogs</title>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Source+Code+Pro:400,600);
+
+        body {
+            font-family: "Trebuchet MS", Consolas, monaco, monospace;
+            line-height: 160%;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        path.link {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        .node:not(:hover) .nodetext {
+            display: none;
+        }
+
+        .nodetext {
+            font-size: 30px;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin: 10px 0;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+
+        h2,
+        h3 {
+            font-size: 30px;
+            margin: 5px 0;
+            font-weight: normal;
+        }
+
+        header {
+            padding: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        a:link {
+            color: #EE3124;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #EE3124;
+        }
+
+        a:hover {
+            color: #A4CD39;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: #EE3124;
+        }
+
+        #tooltip {
+            outline: black;
+            border: black;
+            /* outline-style: groove; */
+            background-color: #f5b7b1;
+            opacity: inherit;
+            word-wrap: break-word;
+            outline-width: 5px;
+            border-width: 5px;
+            border-style: solid;
+            width: 600px;
+            height: 600px;
+            word-wrap: break-word;
+            shape-image-threshold: inherit;
+            font-size: 20px;
+            height: auto;
+            overflow: scroll;
+            max-height: 600px;
+            padding: 5px;
+        }
+
+        .nodeyrtext {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+
+        p {
+            font-size: larger;
+        }
+
+        #writeup {
+            padding: 10px;
+            font-size: 25px;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <head>
+        <h1 style="padding: 10px;">Soviet Space Dogs 1951-1966</h1>
+        <h3 style="padding: 10px;">How to read this chart?</h3>
+        <h3 style="padding: 10px;">* Click on a dog to view more information about their space exploration and the
+            result of the mission.</h3>
+        <h3 style="padding: 10px;">* To hide the dogs click on the parent circle of the dogs.</h3>
+        <h3 style="padding: 10px;">* The size of the circle shows the number of missions that the dog survived. Bigger
+            the circle, the higher
+            number of missions that the dog has survived.</h3>
+        <h3 style="padding: 10px;">* The emoji's on the chart show the survival or death of the dog during the mission.
+        </h3>
+        <h3 style="padding: 10px;">* The year of the space mission is mentioned on the parent circle of the dogs.</h3>
+    </head>
+    <div style="float: inline-start;">
+        <section id="vis" style="float: left;">
+            <div id="tooltip" style="float: right;" class="card"></div>
+        </section>
+    </div>
+
+    <div id="writeup" style="float: inline-end">
+        <h2 style="font-weight: 800;">Write-up</h2>
+        <p>
+            In this visualization, the marks are the dogs condition after the mission and the size of the circle which
+            shows the number of mission that the dog was a part of. The channel in this vis is the lines that connect
+            the dogs to a mission. So, the central node is a superset of all the space missions in the provided dataset
+            and the lines/paths from it gives us the missions and labeled years and which in turn show us the
+            participants of the space mission. The chart consists of three attributes the dogs condition after a
+            mission, circle size to show the number of mission participations and also the year in which the mission
+            took place.
+        </p>
+        <p>The inspiration for this visualization was the D3 force layout <a
+                href="https://github.com/d3/d3-force">(Link)</a>.
+            Most of the D3-force layout examples made by people don't use any images, lack categorical information
+            and temporal information.
+            However, in this chart, I have used images to show the dog's condition after
+            the
+            mission in an engaging way. The presentation of years of the missions in the chart makes it easy to
+            understand the year when a
+            particular mission took place. I also added an animation which makes the emojis bigger when the cursor
+            hovers over it to make the clickable space larger. There is also a way to hide the missions on the chart by
+            clicking the mission years and filtering the dogs visible on the chart. This was done because of the
+            principle in data vis called as overview first and details on demand. I decided to show all the missions in
+            the initial chart as it shows the scale of the missions that the Soviet Union actually conducted in the 20th
+            century.</p>
+        <p>The use of circle size is quite a common occurence in the use of force layouts however, here it proves to be
+            a
+            useful
+            inclusion because of the fact that, the end-user can easily locate the most succesful dogs in the chart at a
+            glance.</p>
+        <p>
+            The main challenge in developing this visualization was the collection of images of all the dogs in the
+            dataset which makes this chart one of the more interesting takes on a force layout chart. The tooltips in
+            the chart are useful tool for storytelling in this chart as we understand the gravity of the situation
+            regarding the experimentation of early space technology on dogs by the Soviet Union.
+        </p>
+        <p>In conclusion, compared to the other takes made on this very same issue like the one made by Duncan Geere <a
+                href="https://old.duncangeere.com/spacedogs/">(Link)</a> and this one by David Smale <a
+                href="https://davidsmale.netlify.app/portfolio/soviet-space-dogs-part-2/">(Link)</a> my chart seems like
+            a different take on the node-link category of charts on the Soviet Space Dog missions. I believe that this
+            chart can be used in museums on touchscreen monitors so the user can interactively learn about the dogs.</p>
+
+    </div>
+</body>
+
+<script>
+    document.body.style.zoom = "60%"
+    var tcBlack = "#130C0E";
+
+    var w = 1800,
+        h = 1800,
+        maxNodeSize = 50,
+        x_browser = 20,
+        y_browser = 25,
+        root;
+
+    var vis;
+    var force = d3.layout.force();
+    vis = d3.select("#vis").append("svg").attr("width", w).attr("height", h);
+
+    d3.json("data\\dogdata.json", function (json) {
+
+        root = json;
+        root.fixed = true;
+        root.x = w / 2;
+        root.y = h / 4;
+
+
+        // Build the path
+        var defs = vis.insert("svg:defs")
+            .data(["end"]);
+
+
+        defs.enter().append("svg:path")
+            .attr("d", "M0,-5L10,0L0,5");
+
+        update();
+    });
+
+    function update() {
+        var nodes = flatten(root),
+            links = d3.layout.tree().links(nodes);
+
+        force.nodes(nodes)
+            .links(links)
+            .gravity(0.05)
+            .charge(-1500)
+            .linkDistance(100)
+            .friction(0.5)
+            .linkStrength(function (l, i) { return 1; })
+            .size([w, h])
+            .on("tick", tick)
+            .start();
+
+        var path = vis.selectAll("path.link")
+            .data(links, function (d) { return d.target.id; });
+
+        path.enter().insert("svg:path")
+            .attr("class", "link")
+            .style("stroke", "#eee");
+
+        // Exit any old paths.
+        path.exit().remove();
+
+        var node = vis.selectAll("g.node")
+            .data(nodes, function (d) { return d.id; });
+
+        var nodeEnter = node.enter().append("svg:g")
+            .attr("class", "node")
+            .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; })
+            .on("click", click)
+            .call(force.drag);
+
+        nodeEnter.append("svg:circle")
+            .attr("r", function (d) { return Math.sqrt(d.numflights * 45000) / 10 || 4.5; })
+            .style("opacity", "0.6")
+            .style("fill", "#f5b7b1");
+
+
+        // Append images
+        var images = nodeEnter.append("svg:image")
+            .attr("xlink:href", function (d) {
+                if (d.fate === 0) { return "imgs\\dogemoji.png"; } else if (d.fate === 1) {
+                    return "imgs\\dogdead1.png";
+                }
+            })
+            .attr("x", function (d) { return -25; })
+            .attr("y", function (d) { return -25; })
+            .attr("height", 50)
+            .attr("width", 50);
+
+        var setEvents = images
+            // Append dog text
+            .on('click', function (d) {
+                htmlStr = "";
+                dname = d.dogname;
+                facts = d.notes;
+                imageEx = d.img;
+                rckt = d.rckt;
+                minfo = d.mission;
+
+                if (facts !== "") {
+                    htmlStr = "<h2>Name: " + dname + "</h2> <br>Facts: " + facts + "<br>Mission: " + rckt + "<br>Result: " + minfo + "<br><br><img src =" + imageEx + " width=\"500\" height=\"500\">"
+                }
+
+                if (facts === "") {
+                    htmlStr = "<h2>Name: " + dname + "</h2>" + "<br>Mission: " + rckt + "<br> Result: " + minfo + "<br><br><center><img src =" + imageEx + " width=\"500\" height=\"500\"><center>"
+                }
+
+                d3.select("#tooltip")
+                    .attr("x", x_browser)
+                    .attr("y", y_browser + 15)
+                    .html(htmlStr);
+
+            })
+
+            .on('mouseenter', function (d) {
+                // select element in current context
+                d3.select(this)
+                    .transition()
+                    .attr("x", function (d) { return -60; })
+                    .attr("y", function (d) { return -60; })
+                    .attr("height", 100)
+                    .attr("width", 100);
+
+                // div.html("<img src= + " + d.img + " + />") //this will add the image on mouseover
+                //     .style("left", (d3.event.pageX + 10) + "px")
+                //     .style("top", (d3.event.pageY + 50) + "px")
+                //     .style("font-color", "white");
+            })
+            // set back
+            .on('mouseleave', function () {
+                d3.select(this)
+                    .transition()
+                    .attr("x", function (d) { return -25; })
+                    .attr("y", function (d) { return -25; })
+                    .attr("height", 50)
+                    .attr("width", 50);
+            });
+
+        // Append dog name on roll over next to the node as well
+        nodeEnter.append("text")
+            .attr("class", "nodetext")
+            .attr("x", x_browser)
+            .attr("y", y_browser + 15)
+            .attr("fill", tcBlack)
+            .text(function (d) { return d.dogname; });
+
+        nodeEnter.append("text")
+            .attr("class", "nodeyrtext")
+            .attr("x", x_browser - 50)
+            .attr("y", y_browser - 8)
+            .attr("fill", tcBlack)
+            .text(function (d) { return d.year; });
+
+
+        // Exit any old nodes.
+        node.exit().remove();
+
+
+        path = vis.selectAll("path.link");
+        node = vis.selectAll("g.node");
+
+        function tick() {
+            path.attr("d", function (d) {
+
+                var dx = d.target.x - d.source.x,
+                    dy = d.target.y - d.source.y,
+                    dr = Math.sqrt(dx * dx + dy * dy);
+                return "M" + d.source.x + ","
+                    + d.source.y
+                    + "A" + dr + ","
+                    + dr + " 0 0,1 "
+                    + d.target.x + ","
+                    + d.target.y;
+            });
+            node.attr("transform", nodeTransform);
+        }
+    }
+
+    function click(d) {
+        if (d.children) {
+            d._children = d.children;
+            d.children = null;
+        } else {
+            d.children = d._children;
+            d._children = null;
+        }
+
+        update();
+    }
+
+    function flatten(root) {
+        var nodes = [];
+        var i = 0;
+
+        function recurse(node) {
+            if (node.children)
+                node.children.forEach(recurse);
+            if (!node.id)
+                node.id = ++i;
+            nodes.push(node);
+        }
+
+        recurse(root);
+        return nodes;
+    }
+
+    function nodeTransform(d) {
+        d.x = Math.max(maxNodeSize, Math.min(w - (d.imgwidth / 2 || 16), d.x));
+        d.y = Math.max(maxNodeSize, Math.min(h - (d.imgheight / 2 || 16), d.y));
+        return "translate(" + d.x + "," + d.y + ")";
+    }
+
+
+
+</script>
